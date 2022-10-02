@@ -7,7 +7,7 @@ Nonograms, commonly known as 'Picross', is a puzzle game in the family of Sudoku
 
 None of the puzzles on the Swadge picross game require guessing in order to solve. In other words (if one doesn't make a mistake) a next step towards the solution can always be logically deduced from the given clues. Additionally, every puzzle has a single unique solution.
 
-The yellow lines are every 5 squares, and only there for convenience.
+The yellow lines are every 5 squares, and only there to help you count.
 
 ## Input
 Move the blue input square with the d-pad. Hold the cursor to auto-move.
@@ -43,7 +43,10 @@ Below is the same as above, but with the connected block groups outlined in red.
 
 The vertical clues are exactly the same as the horizontal clues, but going from top to bottom.
 
+Now you're ready to start solving picross puzzles! I encourage you to get started and try a bit before reading through. The rest of this page highlights a few useful tips and techniques.
+
 ## Techniques for Solving
+
 There are many tips and techniques for solving picross puzzles, this page only outlines some of the most common.
 
 #### Overlaps
@@ -69,6 +72,13 @@ Overlaps are useful on larger puzzles two. Here's another example showing every 
 Here we have two blocks we can fill in. No matter what the solution is, these blocks are filled.
 
 ![Every possible 1 5 fill](1and5all_overlap.png)
+
+Which leaves us with the following:
+
+![Just filling in the known blocks from 1 5](1and5_filled.png)
+
+When you are considering overlaps, you often don't need to consider every single possible position, just the left-most and right-most positions (or top-most and bottom-most)
+
 #### Mark Known Empties
 
 Let's say we just used the above trick to fill in the following clue.
@@ -83,6 +93,8 @@ The clue for the third column is [1 1]. We don't know if the filled in block is 
 
 Marking empties is critical to solving larger puzzles. It's not uncommon that the only next step towards the solution is in the spaces you *don't* fill, rather than the ones that you do.
 
+If you fill out a row such that it's clue matches, you should go in and mark all of the blank spaces as empty. Doing so will help you make deductions elsewhere. You will notice that the clues fade when you have correctly solved them, but they fade *more* when you solve them, and mark all of the remaining spaces as empty.
+
 #### Filling Empty Gaps
 
 In the below example, we have a row with the hint [3]. Let's say we know from other clues that the following squares are empty, marked orange.
@@ -96,3 +108,47 @@ Consider the spaces to the left and the right of those squares. The 3 block coul
 Now that we know the 3 is in the middle, we can use the 'overlaps' technique to in the middle two blocks, as the 3 only has two possible positions, and those blocks are filled in either. Progress!
 
 ![](fillingEmpties3.png)
+
+#### Splitting & Joining
+
+Let's say we know the following:
+
+![](splitting1.png)
+
+If we look at the block in between the 2 groups, we can deduce that it cannot be filled in. If we did **join** the groups, it would create a block that is 4 wide, which is larger than either of our clues, and thus impossible. So we know it is empty. Marking it **splits** the groups.
+
+![](splitting2.png)
+
+Joining, on the other hand, is when we can deduce the opposite and connect blocks. Let's say we know the following:
+
+![](joining1.png)
+
+There is only one clue, and it's [6]. Because there is only one clue, we know the blocks must be connected.
+
+![](joining2.png)
+
+Here is a more complex example. Let's say we already know the following.
+
+![](joining3.png)
+
+Lets consider if we *don't* join the two blocks we already know.
+
+![](joining3_wrong.png)
+
+If that space is empty, then the right block must be 3 connected blocks (because of the clue), and extend to the right. But there isn't enough room over to that side, because of the empty blocks (highlighted red above),
+
+Knowing that that gap cannot be split (marked empty) we join the blocks.
+
+![](joining4.png)
+
+This gives us the further information that, surrounding this 3 block must be at least one empty. This is due to marking known empties, described above.
+
+![](joining5.png)
+
+And that allows us to find the last clue, as it's the only remaining possibility.
+
+![](joining6.png)
+
+---
+
+There are many other techniques to solve puzzles. Explore the [wikipedia page on nonograms](https://en.wikipedia.org/wiki/Nonogram#Solution_techniques) for more. 
