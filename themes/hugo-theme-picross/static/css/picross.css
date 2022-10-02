@@ -1,0 +1,13 @@
+.topic{
+    display: inline;
+}
+
+hr::before .subdivider{
+  width: 50%;
+}
+
+img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block; 
+}

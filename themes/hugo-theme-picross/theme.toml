@@ -1,0 +1,12 @@
+name = "hugo-theme-picross"
+license = "MIT"
+description = "A minimal one-page site."
+tags = ["portfolio","clean", "personal", "minimal", "monotone", "simple"]
+features = []
+min_version = "0.81.0"
+baseURL = "https://picross.hdyar.com"
+
+[author]
+    name = "Hunter Dyar"
+    homepage = "https://hdyar.com"
+    github = "https://github.com/hunterdyar"

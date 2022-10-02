@@ -1,0 +1,4 @@
+baseURL = 'http://picross.hdyar.com/'
+languageCode = 'en-us'
+title = 'How To Play Picross'
+theme = 'hugo-theme-picross'
