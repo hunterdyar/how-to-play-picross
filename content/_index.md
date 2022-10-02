@@ -44,7 +44,7 @@ Below is the same as above, but with the connected block groups outlined in red.
 
 The vertical clues are exactly the same as the horizontal clues, but going from top to bottom.
 
-Now you're ready to start solving picross puzzles! I encourage you to get started and try a bit before reading through. The rest of this page highlights a few useful tips and techniques.
+Now you're ready to start solving picross puzzles! I encourage you to get started and try a bit before reading through. The rest of this page highlights a few useful tips and techniques, but it will be more helpful if you have already tried one or two.
 
 ## Techniques for Solving
 
