@@ -2,6 +2,7 @@
 title: How To Play Picross
 layout: index
 ---
+# How To Play Picross
 
 Nonograms, commonly known as 'Picross', is a puzzle game in the family of Sudoku. The objective is to correctly fill in the grid according to the clues. Spaces will either be empty or filled, and when all of the squares are correctly set, you will have won, revealing the picture.
 
@@ -151,4 +152,4 @@ And that allows us to find the last clue, as it's the only remaining possibility
 
 ---
 
-There are many other techniques to solve puzzles. Explore the [wikipedia page on nonograms](https://en.wikipedia.org/wiki/Nonogram#Solution_techniques) for more. 
+There are many other techniques to solve puzzles. Explore the [wikipedia page on nonograms](https://en.wikipedia.org/wiki/Nonogram#Solution_techniques) for more.
